@@ -121,6 +121,7 @@ record(实验记录)表：r_id(int，主键,实验id)、result(varchar，实验�
 数据库：MySQL8.0:https://www.mysql.com/cn/
 用到的第三方模块：PySide6、sklearn、matplotlib、pandas、numpy、mysql.connector
 开发工具：vs-code 1.70.1 
+
 完成日期：2023年7月
 
 这是大二下的一个课设，这次课设学到了很多东西，但是学到最重要的东西是：保护好自己的知识产权。被剽窃的滋味是真不好受。。甚至那个人都不和你打声招呼的时候。但凡打声招呼我也很乐意分享的。
