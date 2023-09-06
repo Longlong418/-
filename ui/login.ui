@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>login</class>
+ <widget class="QWidget" name="login">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>547</width>
+    <height>269</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>547</width>
+    <height>269</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>547</width>
+    <height>269</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>登录界面</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../image/logo.png</normaloff>../image/logo.png</iconset>
+  </property>
+  <widget class="QLabel" name="background_label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>547</width>
+     <height>269</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../image/background.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>30</y>
+     <width>51</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../image/logo.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+   <property name="margin">
+    <number>4</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>30</y>
+     <width>351</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>楷体</family>
+     <pointsize>24</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>机器学习实验管理平台</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="user_signup">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>140</y>
+     <width>111</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string>
+          QPushButton#user_signup {
+          background-color: #3498db;
+          color: #ffffff;
+          border-radius: 10px;
+          }
+          QPushButton#user_signup:hover {
+          background-color: #45aaf2;
+          }
+          QPushButton#user_signup:pressed {
+          background-color: #2980b9;
+          }
+        </string>
+   </property>
+   <property name="text">
+    <string>用户注册</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>70</y>
+     <width>111</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+          QLabel#label_3 {
+          color: #808080;
+          font-size: 10px;
+          }
+
+        </string>
+   </property>
+   <property name="text">
+    <string>Made by Longlong</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="admin_login">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>140</y>
+     <width>111</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string>
+          QPushButton#admin_login {
+          background-color: #e74c3c;
+          color: #ffffff;
+          border-radius: 10px;
+          }
+          QPushButton#admin_login:hover {
+          background-color: #f05a4d;
+          }
+          QPushButton#admin_login:pressed {
+          background-color: #c0392b;
+          }
+        </string>
+   </property>
+   <property name="text">
+    <string>管理员登录</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="user_login">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>140</y>
+     <width>111</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string>
+          QPushButton#user_login {
+          background-color: #27ae60;
+          color: #ffffff;
+          border-radius: 10px;
+          }
+          QPushButton#user_login:hover {
+          background-color: #2ecc71;
+          }
+          QPushButton#user_login:pressed {
+          background-color: #1f8b4c;
+          }
+        </string>
+   </property>
+   <property name="text">
+    <string>用户登录</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

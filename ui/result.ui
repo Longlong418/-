@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+  <class>result</class>
+  <widget class="QWidget" name="result">
+    <property name="geometry">
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>676</width>
+        <height>641</height>
+      </rect>
+    </property>
+    <property name="windowTitle">
+      <string>训练结果</string>
+    </property>
+    <widget class="QLabel" name="label_2">
+      <property name="geometry">
+        <rect>
+          <x>260</x>
+          <y>0</y>
+          <width>131</width>
+          <height>51</height>
+        </rect>
+      </property>
+      <property name="font">
+        <font>
+          <family>楷体</family>
+          <pointsize>24</pointsize>
+        </font>
+      </property>
+      <property name="text">
+        <string>训练结果</string>
+      </property>
+      <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+    </widget>
+    <widget class="QStackedWidget" name="stackedWidget">
+      <property name="geometry">
+        <rect>
+          <x>10</x>
+          <y>270</y>
+          <width>561</width>
+          <height>361</height>
+        </rect>
+      </property>
+      <property name="currentIndex">
+        <number>0</number>
+      </property>
+      <widget class="QWidget" name="page">
+        <widget class="QLabel" name="pic_1">
+          <property name="geometry">
+            <rect>
+              <x>23</x>
+              <y>15</y>
+              <width>501</width>
+              <height>341</height>
+            </rect>
+          </property>
+          <property name="text">
+            <string />
+          </property>
+        </widget>
+      </widget>
+      <widget class="QWidget" name="page_2">
+        <widget class="QLabel" name="pic_2">
+          <property name="geometry">
+            <rect>
+              <x>13</x>
+              <y>15</y>
+              <width>511</width>
+              <height>321</height>
+            </rect>
+          </property>
+          <property name="text">
+            <string />
+          </property>
+        </widget>
+      </widget>
+      <widget class="QWidget" name="page_3">
+        <widget class="QLabel" name="pic_3">
+          <property name="geometry">
+            <rect>
+              <x>23</x>
+              <y>15</y>
+              <width>511</width>
+              <height>321</height>
+            </rect>
+          </property>
+          <property name="text">
+            <string />
+          </property>
+        </widget>
+      </widget>
+    </widget>
+    <widget class="QRadioButton" name="ROC">
+      <property name="geometry">
+        <rect>
+          <x>590</x>
+          <y>340</y>
+          <width>95</width>
+          <height>20</height>
+        </rect>
+      </property>
+      <property name="text">
+        <string>图1</string>
+      </property>
+      <property name="checked">
+        <bool>true</bool>
+      </property>
+    </widget>
+    <widget class="QRadioButton" name="p_r">
+      <property name="geometry">
+        <rect>
+          <x>590</x>
+          <y>420</y>
+          <width>95</width>
+          <height>20</height>
+        </rect>
+      </property>
+      <property name="text">
+        <string>图2</string>
+      </property>
+    </widget>
+    <widget class="QRadioButton" name="learn">
+      <property name="geometry">
+        <rect>
+          <x>590</x>
+          <y>490</y>
+          <width>95</width>
+          <height>20</height>
+        </rect>
+      </property>
+      <property name="text">
+        <string>图3</string>
+      </property>
+    </widget>
+    <widget class="QTableWidget" name="tableWidget">
+      <property name="geometry">
+        <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>661</width>
+          <height>211</height>
+        </rect>
+      </property>
+      <property name="editTriggers">
+        <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+      <column>
+        <property name="text">
+          <string>评价指标</string>
+        </property>
+      </column>
+      <column>
+        <property name="text">
+          <string>数据</string>
+        </property>
+      </column>
+    </widget>
+    <widget class="QLabel" name="label">
+      <property name="geometry">
+        <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>51</width>
+          <height>16</height>
+        </rect>
+      </property>
+      <property name="text">
+        <string>实验ID：</string>
+      </property>
+    </widget>
+    <widget class="QLabel" name="id">
+      <property name="geometry">
+        <rect>
+          <x>70</x>
+          <y>20</y>
+          <width>111</width>
+          <height>16</height>
+        </rect>
+      </property>
+      <property name="text">
+        <string>11111</string>
+      </property>
+    </widget>
+    <property name="styleSheet">
+      <string>
+        #result{background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #4DA2CB, stop:1 #67B26F);}
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        QPushButton {
+        border-radius: 5px;
+        background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 0, 0, 255), stop:1 rgba(255, 255, 0, 255));
+        color: white;
+        padding: 5px 10px;
+        }
+        QPushButton:hover {
+        background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 255, 0, 255), stop:1 rgba(255, 0, 0, 255));
+        }
+        QLabel {
+        font-family: "Arial";
+        font-size: 14px;
+        color: #FF00FF;
+        text-align: center;
+        }
+        QTableWidget {
+        background-color: #222222; /* 背景颜色 */
+        alternate-background-color: #333333; /* 交替行背景颜色 */
+        border: none; /* 去除边框 */
+        /* 滚动条样式 */
+        QScrollBar:vertical {
+        background-color: #111111;
+        width: 12px;
+        margin: 0px 0px 0px 0px;
+        }
+        QScrollBar::handle:vertical {
+        background-color: #888888;
+        min-height: 20px;
+        }
+        QScrollBar::handle:vertical:hover {
+        background-color: #999999;
+        }
+        QScrollBar::add-line:vertical,
+        QScrollBar::sub-line:vertical {
+        background: none;
+        height: 0px;
+        width: 0px;
+        }
+        QScrollBar::add-page:vertical,
+        QScrollBar::sub-page:vertical {
+        background: none;
+        }
+        }
+        QTableWidget::item {
+        padding: 5px; /* 单元格内边距 */
+        background-color: #222222; /* 单元格背景颜色 */
+        color: #FFFFFF; /* 文字颜色 */
+        border-bottom: 1px solid #333333; /* 单元格底部边框 */
+        }
+        QTableWidget::item:hover {
+        background-color: #555555; /* 悬停时的背景颜色 */
+        }
+        QTableWidget::item:selected {
+        background-color: #FF6600; /* 选中单元格的背景颜色 */
+        color: #FFFFFF; /* 选中单元格的文字颜色 */
+        }
+        QHeaderView {
+        background-color: #222222; /* 表头背景颜色 */
+        border: none; /* 去除边框 */
+        }
+        QHeaderView::section {
+        padding: 5px; /* 表头内边距 */
+        background-color: #222222; /* 表头背景颜色 */
+        color: #FFFFFF; /* 表头文字颜色 */
+        border-bottom: 1px solid #333333; /* 表头底部边框 */
+        }
+        QHeaderView::section:hover {
+        background-color: #555555; /* 悬停时的表头背景颜色 */
+        }
+        QHeaderView::section:checked {
+        background-color: #FF6600; /* 选中的表头背景颜色 */
+        color: #FFFFFF; /* 选中的表头文字颜色 */
+        }
+      </string>
+    </property>
+  </widget>
+  <resources />
+  <connections />
+</ui>

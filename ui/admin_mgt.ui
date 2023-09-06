@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+  <class>admin_mgt</class>
+  <widget class="QWidget" name="admin_mgt">
+    <property name="geometry">
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>728</width>
+        <height>561</height>
+      </rect>
+    </property>
+    <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+      </sizepolicy>
+    </property>
+    <property name="minimumSize">
+      <size>
+        <width>630</width>
+        <height>558</height>
+      </size>
+    </property>
+    <property name="maximumSize">
+      <size>
+        <width>1000</width>
+        <height>1000</height>
+      </size>
+    </property>
+    <property name="cursor">
+      <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="windowTitle">
+      <string>信息管理</string>
+    </property>
+    <property name="windowIcon">
+      <iconset>
+        <normaloff>../image/logo.png</normaloff>../image/logo.png
+      </iconset>
+    </property>
+
+    <widget class="QLabel" name="label_2">
+      <property name="geometry">
+        <rect>
+          <x>220</x>
+          <y>0</y>
+          <width>221</width>
+          <height>51</height>
+        </rect>
+      </property>
+      <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+        </sizepolicy>
+      </property>
+      <property name="font">
+        <font>
+          <family>楷体</family>
+          <pointsize>24</pointsize>
+        </font>
+      </property>
+      <property name="text">
+        <string>管理员信息管理</string>
+      </property>
+      <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+    </widget>
+    <widget class="QPushButton" name="delet">
+      <property name="geometry">
+        <rect>
+          <x>130</x>
+          <y>490</y>
+          <width>121</width>
+          <height>61</height>
+        </rect>
+      </property>
+      <property name="text">
+        <string>删除</string>
+      </property>
+    </widget>
+    <widget class="QTableWidget" name="tableWidget">
+      <property name="geometry">
+        <rect>
+          <x>220</x>
+          <y>80</y>
+          <width>301</width>
+          <height>341</height>
+        </rect>
+      </property>
+      <property name="verticalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOn</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="editTriggers">
+        <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+      <property name="dragDropMode">
+        <enum>QAbstractItemView::NoDragDrop</enum>
+      </property>
+      <property name="selectionMode">
+        <enum>QAbstractItemView::ContiguousSelection</enum>
+      </property>
+      <property name="selectionBehavior">
+        <enum>QAbstractItemView::SelectRows</enum>
+      </property>
+      <property name="textElideMode">
+        <enum>Qt::ElideLeft</enum>
+      </property>
+      <property name="verticalScrollMode">
+        <enum>QAbstractItemView::ScrollPerItem</enum>
+      </property>
+      <property name="horizontalScrollMode">
+        <enum>QAbstractItemView::ScrollPerItem</enum>
+      </property>
+      <property name="gridStyle">
+        <enum>Qt::SolidLine</enum>
+      </property>
+      <property name="rowCount">
+        <number>14</number>
+      </property>
+      <attribute name="horizontalHeaderDefaultSectionSize">
+        <number>130</number>
+      </attribute>
+      <row />
+      <row />
+      <row />
+      <row />
+      <row />
+      <row />
+      <row />
+      <row />
+      <row />
+      <row />
+      <row />
+      <row />
+      <row />
+      <row />
+      <column>
+        <property name="text">
+          <string>管理员名</string>
+        </property>
+      </column>
+      <column>
+        <property name="text">
+          <string>密码</string>
+        </property>
+      </column>
+    </widget>
+    <widget class="QPushButton" name="change">
+      <property name="geometry">
+        <rect>
+          <x>300</x>
+          <y>490</y>
+          <width>121</width>
+          <height>61</height>
+        </rect>
+      </property>
+      <property name="maximumSize">
+        <size>
+          <width>1000</width>
+          <height>400</height>
+        </size>
+      </property>
+      <property name="text">
+        <string>修改</string>
+      </property>
+    </widget>
+    <widget class="QLineEdit" name="adminname">
+      <property name="geometry">
+        <rect>
+          <x>270</x>
+          <y>440</y>
+          <width>111</width>
+          <height>31</height>
+        </rect>
+      </property>
+    </widget>
+    <widget class="QLabel" name="label">
+      <property name="geometry">
+        <rect>
+          <x>203</x>
+          <y>440</y>
+          <width>71</width>
+          <height>31</height>
+        </rect>
+      </property>
+      <property name="font">
+        <font>
+          <pointsize>12</pointsize>
+        </font>
+      </property>
+      <property name="cursor">
+        <cursorShape>IBeamCursor</cursorShape>
+      </property>
+      <property name="text">
+        <string>管理员名</string>
+      </property>
+    </widget>
+    <widget class="QLineEdit" name="passwords">
+      <property name="geometry">
+        <rect>
+          <x>430</x>
+          <y>440</y>
+          <width>121</width>
+          <height>31</height>
+        </rect>
+      </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+      <property name="geometry">
+        <rect>
+          <x>390</x>
+          <y>440</y>
+          <width>54</width>
+          <height>31</height>
+        </rect>
+      </property>
+      <property name="font">
+        <font>
+          <pointsize>12</pointsize>
+        </font>
+      </property>
+      <property name="text">
+        <string>密码</string>
+      </property>
+    </widget>
+    <widget class="QPushButton" name="add">
+      <property name="geometry">
+        <rect>
+          <x>470</x>
+          <y>490</y>
+          <width>121</width>
+          <height>61</height>
+        </rect>
+      </property>
+      <property name="maximumSize">
+        <size>
+          <width>1000</width>
+          <height>400</height>
+        </size>
+      </property>
+      <property name="text">
+        <string>添加</string>
+      </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+      <property name="geometry">
+        <rect>
+          <x>520</x>
+          <y>20</y>
+          <width>54</width>
+          <height>16</height>
+        </rect>
+      </property>
+      <property name="text">
+        <string />
+      </property>
+    </widget>
+    <widget class="QLineEdit" name="search_admin">
+      <property name="geometry">
+        <rect>
+          <x>450</x>
+          <y>30</y>
+          <width>171</width>
+          <height>41</height>
+        </rect>
+      </property>
+      <property name="font">
+        <font>
+          <pointsize>12</pointsize>
+        </font>
+      </property>
+      <property name="tabletTracking">
+        <bool>false</bool>
+      </property>
+      <property name="placeholderText">
+        <string>搜索</string>
+      </property>
+      <property name="cursorMoveStyle">
+        <enum>Qt::LogicalMoveStyle</enum>
+      </property>
+    </widget>
+    <widget class="QPushButton" name="search">
+      <property name="geometry">
+        <rect>
+          <x>570</x>
+          <y>40</y>
+          <width>75</width>
+          <height>24</height>
+        </rect>
+      </property>
+      <property name="styleSheet">
+        <string notr="true">background-color: transparent;</string>
+      </property>
+      <property name="text">
+        <string />
+      </property>
+      <property name="icon">
+        <iconset>
+          <normaloff>../image/search.png</normaloff>../image/search.png
+        </iconset>
+      </property>
+    </widget>
+    <property name="styleSheet">
+      <string>
+        #admin_mgt {
+        background-color: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #6190E8,stop:1 #A7BFE8);
+        }
+        QTableWidget {
+        background-color: #FFFFFF;
+        alternate-background-color: #F2F2F2;
+        border: none;
+        }
+        QTableWidget::item {
+        padding: 5px;
+        background-color: #FFFFFF;
+        color: #333333;
+        border-bottom: 1px solid #E5E5E5;
+        }
+        QTableWidget::item:hover {
+        background-color: #E6F2FF;
+        }
+        QTableWidget::item:selected {
+        background-color: #4299FF;
+        color: #FFFFFF;
+        }
+        QHeaderView {
+        background-color: #6190E8;
+        border: none;
+        }
+        QHeaderView::section {
+        padding: 5px;
+        background-color: #6190E8;
+        color: #FFFFFF;
+        border-bottom: 1px solid #4786D1;
+        }
+        QHeaderView::section:hover {
+        background-color: #4786D1;
+        }
+        QHeaderView::section:checked {
+        background-color: #4299FF;
+        color: #FFFFFF;
+        }
+        QPushButton {
+        background-color: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #6190E8,stop:1 #A7BFE8);
+        color: #FFFFFF;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 10px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        }
+        QPushButton:hover {
+        background-color: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #A7BFE8,stop:1 #6190E8);
+        }
+        QPushButton:pressed {
+        background-color: #366BA4;
+        }
+        QPushButton:disabled {
+        background-color: #999999;
+        color: #CCCCCC;
+        }
+        QPushButton:default {
+        border: none;
+        border-radius: 5px;
+        background-color: #4299FF;
+        color: #FFFFFF;
+        padding: 10px 20px;
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        outline: none;
+        }
+        QPushButton:focus {
+        outline: none;
+        border: 2px solid #4299FF;
+        }
+      </string>
+    </property>
+  </widget>
+  <resources />
+  <connections />
+</ui>
